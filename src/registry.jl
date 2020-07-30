@@ -7,6 +7,7 @@ add_format(format"JLD2", "Julia data file (HDF5), version 0.2", ".jld2", [:JLD2]
 add_format(format"GZIP", [0x1f, 0x8b], ".gz", [:Libz])
 add_format(format"BSON",(),".bson", [:BSON])
 add_format(format"JLSO", (), ".jlso", [:JLSO])
+add_format(format"JSON", (), ".json", [:JSON])
 
 # test for RD?n magic sequence at the beginning of R data input stream
 function detect_rdata(io)
